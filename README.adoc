@@ -1,0 +1,17 @@
+= Spring Beet image:https://travis-ci.com/spring-bees/spring-beet.svg?branch=master["Build Status", link="https://travis-ci.com/spring-bees/spring-beet"]
+
+== 编译项目
+
+```shell script
+./mvnw clean install
+```
+
+== 其它编译参数
+跳过代码风格检查
+```shell script
+./mvnw clean install -Dcheckstyle.skip
+```
+跳过静态代码检查
+```shell script
+./mvnw clean install -Dcheckstyle.skip -Dspotbugs.skip
+```
