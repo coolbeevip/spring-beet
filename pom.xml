@@ -59,6 +59,7 @@
     <module>spring-beet-parent</module>
     <module>spring-beet-common</module>
     <module>spring-beet-logging</module>
+    <module>spring-beet-web</module>
     <module>spring-beet-starters</module>
     <module>spring-beet-example</module>
   </modules>

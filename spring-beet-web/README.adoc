@@ -1,0 +1,44 @@
+配置WEB参数
+
+----
+# server
+server.host=0.0.0.0
+server.port=8088
+server.secondary.port=0
+server.http2.enabled=true
+server.undertow.direct-buffers=true
+server.undertow.buffer-size=1024
+server.undertow.threads.io=16
+server.undertow.threads.worker=256
+server.undertow.buffer-pool=1024
+# server ssl
+server.ssl.enabled=false
+server.ssl.key-store-type=PKCS12
+server.ssl.key-store=classpath:keystore/springbeet.p12
+server.ssl.key-store-password=123456
+server.ssl.key-alias=springbeet
+----
+
+生成自签名证书
+
+----
+$ keytool -genkeypair -alias springbeet -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore springbeet.p12 -storepass 123456 -validity 3650
+
+Enter keystore password:
+Re-enter new password:
+What is your first and last name?
+[Unknown]:  springbeet
+What is the name of your organizational unit?
+[Unknown]:  springbeet
+What is the name of your organization?
+[Unknown]:  springbeet
+What is the name of your City or Locality?
+[Unknown]:
+What is the name of your State or Province?
+[Unknown]:
+What is the two-letter country code for this unit?
+[Unknown]:
+Is CN=yong, OU=mkyong, O=mkyong, L=Unknown, ST=Unknown, C=Unknown correct?
+[no]:  yes
+
+----

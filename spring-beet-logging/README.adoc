@@ -1,13 +1,11 @@
 配置日志输出方式
 
-[source,properties]
 ----
 spring.profiles.active=log-to-file # log-to-file,log-to-kafka
 ----
 
 默认配置
 
-[source,properties]
 ----
 logging.level.root=INFO
 logging.file.path=logs

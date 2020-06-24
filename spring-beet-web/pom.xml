@@ -21,13 +21,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
+    <artifactId>spring-beet-parent</artifactId>
     <groupId>org.springbees.beet</groupId>
-    <artifactId>spring-beet-dependencies</artifactId>
     <version>${revision}</version>
-    <relativePath>../../spring-beet-dependencies</relativePath>
+    <relativePath>../spring-beet-parent</relativePath>
   </parent>
-  <artifactId>spring-beet-starter-parent</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>spring-beet-web</artifactId>
 
   <dependencies>
     <dependency>
@@ -35,13 +34,28 @@
       <artifactId>spring-beet-common</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.springbees.beet</groupId>
-      <artifactId>spring-beet-logging</artifactId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <exclusions>
+        <exclusion>
+          <artifactId>spring-boot-starter-tomcat</artifactId>
+          <groupId>org.springframework.boot</groupId>
+        </exclusion>
+      </exclusions>
+      <groupId>org.springframework.boot</groupId>
     </dependency>
     <dependency>
-      <groupId>org.springbees.beet</groupId>
-      <artifactId>spring-beet-web</artifactId>
+      <artifactId>spring-boot-starter-undertow</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpcore</artifactId>
+      <version>4.4.13</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.5.12</version>
     </dependency>
   </dependencies>
-
 </project>
