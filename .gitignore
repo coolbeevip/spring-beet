@@ -8,3 +8,5 @@
 # maven
 target/
 
+# spring beet
+logs/
