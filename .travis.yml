@@ -7,6 +7,8 @@ cache:
   directories:
     - "$HOME/.m2"
 
-
 script: 
-  - ./mvnw clean install -B
+  - ./mvnw clean install -B -Djacoco.skip
+
+after_success:
+  - mvn -B jacoco:report coveralls:report -DrepoToken=$COVERALLS_TOKEN
