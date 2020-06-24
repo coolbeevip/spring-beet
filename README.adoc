@@ -13,5 +13,9 @@
 ```
 跳过静态代码检查
 ```shell script
-./mvnw clean install -Dcheckstyle.skip -Dspotbugs.skip
+./mvnw clean install -Dspotbugs.skip
+```
+跳过测试覆盖率检查
+```shell script
+./mvnw clean install -Djacoco.skip
 ```

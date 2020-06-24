@@ -14,7 +14,7 @@ public class SpringBeetApplicationRunListenerTest {
   private Environment env;
 
   @Test
-  public void testDefaultProperties() {
+  public void defaultPropertiesTest() {
     assertEquals(env.getProperty("spring.application.name"), "spring.beet-application");
   }
 }
