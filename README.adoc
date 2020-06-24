@@ -2,20 +2,32 @@
 
 == 编译项目
 
-```shell script
+----
 ./mvnw clean install
-```
+----
 
 == 其它编译参数
+
 跳过代码风格检查
-```shell script
+
+----
 ./mvnw clean install -Dcheckstyle.skip
-```
+----
+
 跳过静态代码检查
-```shell script
+
+----
 ./mvnw clean install -Dspotbugs.skip
-```
+----
+
 跳过测试覆盖率检查
-```shell script
+
+----
 ./mvnw clean install -Djacoco.skip
-```
+----
+
+检查版权信息
+
+----
+./mvnw license:check
+----
