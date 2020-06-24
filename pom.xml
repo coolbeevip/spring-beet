@@ -76,6 +76,7 @@
               <include>**/*.java</include>
               <include>**/*.xml</include>
               <include>**/*.yaml</include>
+              <include>**/*.yml</include>
               <include>**/*.properties</include>
               <include>**/*.factories</include>
             </includes>
