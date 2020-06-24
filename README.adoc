@@ -31,3 +31,9 @@
 ----
 ./mvnw license:check
 ----
+
+添加版权信息
+
+----
+./mvnw license:format
+----
