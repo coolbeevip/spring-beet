@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fspring-bees%2Fspring-beet.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fspring-bees%2Fspring-beet?ref=badge_shield)
+
 = Spring Beet image:https://travis-ci.com/spring-bees/spring-beet.svg?branch=master["Build Status", link="https://travis-ci.com/spring-bees/spring-beet"] image:https://coveralls.io/repos/github/spring-bees/spring-beet/badge.svg?branch=master["Coverage Status", link="https://coveralls.io/github/spring-bees/spring-beet?branch=master"]
 
 == 编译项目
@@ -19,3 +21,6 @@
 ```shell script
 ./mvnw clean install -Djacoco.skip
 ```
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fspring-bees%2Fspring-beet.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fspring-bees%2Fspring-beet?ref=badge_large)
