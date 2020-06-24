@@ -1,4 +1,4 @@
-= Spring Beet image:https://travis-ci.com/spring-bees/spring-beet.svg?branch=master["Build Status", link="https://travis-ci.com/spring-bees/spring-beet"] image:https://coveralls.io/repos/github/spring-bees/spring-beet/badge.svg?branch=master["Coverage Status", link="https://coveralls.io/github/spring-bees/spring-beet?branch=master"]
+= Spring Beet image:https://travis-ci.com/spring-bees/spring-beet.svg?branch=master["Build Status", link="https://travis-ci.com/spring-bees/spring-beet"] image:https://coveralls.io/repos/github/spring-bees/spring-beet/badge.svg?branch=master["Coverage Status", link="https://coveralls.io/github/spring-bees/spring-beet?branch=master"] image:https://app.fossa.com/api/projects/git%2Bgithub.com%2Fspring-bees%2Fspring-beet.svg?type=shield["FOSSA Status", link="https://app.fossa.com/projects/git%2Bgithub.com%2Fspring-bees%2Fspring-beet?ref=badge_shield"]
 
 == 编译项目
 
