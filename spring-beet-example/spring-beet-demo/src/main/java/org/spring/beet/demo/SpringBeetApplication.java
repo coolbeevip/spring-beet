@@ -1,7 +1,6 @@
-package org.spring.beet.common.listener;
+package org.spring.beet.demo;
 
 import lombok.extern.slf4j.Slf4j;
-import org.spring.beet.common.springboot.ApplicationContextWrapper;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,12 +20,5 @@ public class SpringBeetApplication {
     return args -> {
       log.info("Demo Started!");
     };
-  }
-
-  @Bean
-  public ApplicationContextWrapper applicationContextWrapper(ApplicationContext ctx) {
-    ApplicationContextWrapper contextWrapper = new ApplicationContextWrapper();
-    contextWrapper.setApplicationContext(ctx);
-    return contextWrapper;
   }
 }

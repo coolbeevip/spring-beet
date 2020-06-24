@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<included>
+  <appender class="org.spring.beet.logging.kafka.KafkaAppender" name="KafkaAppender">
+    <appendTimestamp>true</appendTimestamp>
+    <deliveryStrategy
+      class="org.spring.beet.logging.kafka.delivery.AsynchronousDeliveryStrategy"/>
+    <encoder>
+      <pattern>[${server.host}] %d %p %C{1.} [%t] %m%n</pattern>
+    </encoder>
+    <keyingStrategy class="org.spring.beet.logging.kafka.keying.HostNameKeyingStrategy"/>
+    <partition>${logging.kafka.partition}</partition>
+    <producerConfig>bootstrap.servers=${logging.kafka.bootstrap.servers}</producerConfig>
+    <producerConfig>acks=0</producerConfig>
+    <topic>${logging.kafka.topic}</topic>
+  </appender>
+  <springProperty defaultValue="0" name="logging.kafka.partition" scope="context"
+    source="logging.kafka.partition"/>
+  <springProperty defaultValue="localhost:9092" name="logging.kafka.bootstrap.servers"
+    scope="context"
+    source="logging.kafka.bootstrap.servers"/>
+  <springProperty defaultValue="spring.beet-topic" name="logging.kafka.topic" scope="context"
+    source="logging.kafka.topic"/>
+</included>

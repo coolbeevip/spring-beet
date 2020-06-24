@@ -48,9 +48,15 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <!-- spring beet -->
       <dependency>
         <groupId>org.springbees.beet</groupId>
         <artifactId>spring-beet-common</artifactId>
+        <version>${revision}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springbees.beet</groupId>
+        <artifactId>spring-beet-logging</artifactId>
         <version>${revision}</version>
       </dependency>
       <dependency>

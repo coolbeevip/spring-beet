@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<included>
+  <property name="FILE" value="${logging.file.name}"/>
+  <property name="LOGS" value="${logging.file.path}"/>
+  <springProperty defaultValue="logs" name="logging.file.path" scope="context"
+    source="logging.file.path"/>
+  <springProperty defaultValue="spring.beet.log" name="logging.file.name" scope="context"
+    source="logging.file.name"/>
+  <appender class="ch.qos.logback.core.rolling.RollingFileAppender"
+    name="RollingFileAppender">
+    <encoder
+      class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>[${server.host}] %d %p %C{1.} [%t] %m%n</Pattern>
+    </encoder>
+    <file>${LOGS}/${FILE}</file>
+
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${LOGS}/archived/${FILE}-%d{yyyy-MM-dd}.%i</fileNamePattern>
+      <maxHistory>10</maxHistory>
+      <timeBasedFileNamingAndTriggeringPolicy
+        class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+        <maxFileSize>50MB</maxFileSize>
+      </timeBasedFileNamingAndTriggeringPolicy>
+    </rollingPolicy>
+  </appender>
+</included>

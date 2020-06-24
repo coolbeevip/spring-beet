@@ -1,2 +1,2 @@
 org.springframework.boot.SpringApplicationRunListener=\
-org.spring.beet.common.listener.SpringBeetApplicationRunListener
+org.spring.beet.common.springboot.SpringBeetApplicationRunListener

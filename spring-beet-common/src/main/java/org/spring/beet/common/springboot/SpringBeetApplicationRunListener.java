@@ -1,4 +1,4 @@
-package org.spring.beet.common.listener;
+package org.spring.beet.common.springboot;
 
 import java.io.IOException;
 import java.io.InputStream;

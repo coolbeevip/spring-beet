@@ -4,23 +4,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
+    <artifactId>spring-beet-parent</artifactId>
     <groupId>org.springbees.beet</groupId>
-    <artifactId>spring-beet-dependencies</artifactId>
     <version>${revision}</version>
-    <relativePath>../../spring-beet-dependencies</relativePath>
+    <relativePath>../spring-beet-parent</relativePath>
   </parent>
-  <artifactId>spring-beet-starter-parent</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>spring-beet-logging</artifactId>
 
   <dependencies>
     <dependency>
       <groupId>org.springbees.beet</groupId>
       <artifactId>spring-beet-common</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.springbees.beet</groupId>
-      <artifactId>spring-beet-logging</artifactId>
-    </dependency>
   </dependencies>
-
 </project>

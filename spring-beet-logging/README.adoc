@@ -1,0 +1,17 @@
+配置日志输出方式
+
+[source,properties]
+----
+spring.profiles.active=log-to-file # log-to-file,log-to-kafka
+----
+
+默认配置
+
+[source,properties]
+----
+logging.level.root=INFO
+logging.file.path=logs
+logging.file.name=spring.beet.log
+logging.sensitive[0].regex=(\\d{3})\\d{4}(\\d{4})
+logging.sensitive[0].replacement=$1****$2
+----

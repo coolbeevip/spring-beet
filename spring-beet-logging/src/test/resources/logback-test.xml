@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <conversionRule conversionWord="msg" converterClass="org.spring.beet.logging.ConversionAdapter"/>
+  <appender name="testAppender" class="org.spring.beet.logging.SensitiveAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>%msg</Pattern>
+    </layout>
+  </appender>
+  <root level="info">
+    <appender-ref ref="testAppender"/>
+  </root>
+</configuration>
