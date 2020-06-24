@@ -29,7 +29,7 @@ public class SpringBeetApplicationRunListener implements SpringApplicationRunLis
       environment.getPropertySources()
           .addLast(new PropertiesPropertySource("spring-beet-default", properties));
     } catch (IOException e) {
-      log.error(e.getMessage(), e);
+      log.error(e.getMessage(), e); // $COVERAGE-IGNORE$
     }
   }
 }

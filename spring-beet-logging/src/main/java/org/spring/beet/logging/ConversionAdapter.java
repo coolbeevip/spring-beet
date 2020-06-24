@@ -29,8 +29,8 @@ public class ConversionAdapter extends MessageConverter {
       try {
         return sensitiveRegexReplacement(msg);
       } catch (Exception e) {
-        log.error("sensitive regex replacement fail:", e);
-        return msg;
+        log.error("sensitive regex replacement fail:", e); // $COVERAGE-IGNORE$
+        return msg; // $COVERAGE-IGNORE$
       }
     }
   }

@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <included>
-  <property name="FILE" value="${logging.file.name}"/>
-  <property name="LOGS" value="${logging.file.path}"/>
-  <springProperty defaultValue="logs" name="logging.file.path" scope="context"
+  <springProperty defaultValue="logs" name="LOGS" scope="context"
     source="logging.file.path"/>
-  <springProperty defaultValue="spring.beet.log" name="logging.file.name" scope="context"
+  <springProperty defaultValue="spring.beet.log" name="FILE" scope="context"
     source="logging.file.name"/>
   <appender class="ch.qos.logback.core.rolling.RollingFileAppender"
     name="RollingFileAppender">
