@@ -11,4 +11,4 @@ script:
   - ./mvnw clean install -B -Djacoco.skip
 
 after_success:
-  - mvn -B jacoco:report coveralls:report -DrepoToken=$COVERALLS_TOKEN
+  - ./mvnw -B jacoco:report coveralls:report -DrepoToken=$COVERALLS_TOKEN
