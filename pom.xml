@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
   <properties>
     <revision>1.0.0-2.3.0-SNAPSHOT</revision>
-    <main.basedir>${basedir}</main.basedir>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <puppycrawl.checkstyle.version>8.29</puppycrawl.checkstyle.version>
     <maven-checkstyle-plugin.version>3.1.1</maven-checkstyle-plugin.version>
