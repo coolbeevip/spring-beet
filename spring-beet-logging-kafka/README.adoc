@@ -1,0 +1,27 @@
+== 日志输出Kafka模块
+
+依赖
+
+[source,xml]
+<dependency>
+    <groupId>org.springbee</groupId>
+    <artifactId>springbeet-logging</artifactId>
+    <scope>runtime</scope>
+</dependency>
+<dependency>
+    <groupId>org.springbee</groupId>
+    <artifactId>springbeet-logging-kafka</artifactId>
+</dependency>
+
+配置
+
+----
+spring.profiles.active=log-to-kafka
+logging.kafka.partition=0
+logging.kafka.bootstrap.servers=localhost:9092
+logging.kafka.topic=<topic-name>
+----
+
+参考并感谢
+
+_https://github.com/danielwegener/logback-kafka-appender[logback-kafka-appender]_

@@ -57,8 +57,10 @@
   <modules>
     <module>spring-beet-dependencies</module>
     <module>spring-beet-parent</module>
+    <module>spring-beet-test</module>
     <module>spring-beet-common</module>
     <module>spring-beet-logging</module>
+    <module>spring-beet-logging-kafka</module>
     <module>spring-beet-web</module>
     <module>spring-beet-starters</module>
     <module>spring-beet-example</module>
@@ -182,12 +184,12 @@
                   <limits>
                     <limit implementation="org.jacoco.report.check.Limit">
                       <counter>METHOD</counter>
-                      <minimum>0.80</minimum>
+                      <minimum>0.70</minimum>
                       <value>COVEREDRATIO</value>
                     </limit>
                     <limit implementation="org.jacoco.report.check.Limit">
                       <counter>LINE</counter>
-                      <minimum>0.80</minimum>
+                      <minimum>0.70</minimum>
                       <value>COVEREDRATIO</value>
                     </limit>
                     <limit implementation="org.jacoco.report.check.Limit">

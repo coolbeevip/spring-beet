@@ -1,3 +1,8 @@
+== 日志模块
+
+默认使用 Logback 日志框架，支持输出到控制台、文件、Kafka（需要引入 spring-beet-logging-kafka 依赖）
+支持配置 `logging.sensitive` 实现日志输出脱敏
+
 配置日志输出方式
 
 ----
