@@ -21,7 +21,7 @@
   <parent>
     <artifactId>spring-beet-starter-parent</artifactId>
     <groupId>org.springbees.beet</groupId>
-    <version>1.0.0-2.3.0</version>
+    <version>1.0.0-3.3.0-SNAPSHOT</version>
     <relativePath>../../spring-beet-starters/spring-beet-starter-parent</relativePath>
   </parent>
   <artifactId>spring-beet-demo</artifactId>
