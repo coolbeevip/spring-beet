@@ -59,6 +59,7 @@
     <module>spring-beet-parent</module>
     <module>spring-beet-test</module>
     <module>spring-beet-common</module>
+    <module>spring-beet-jdbc</module>
     <module>spring-beet-logging</module>
     <module>spring-beet-logging-kafka</module>
     <module>spring-beet-web</module>

@@ -1,0 +1,1 @@
+create table city (id varchar primary key, name varchar, state varchar, country varchar);

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright © 2020 Lei Zhang (zhanglei@apache.org)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>spring-beet-parent</artifactId>
+    <groupId>org.springbees.beet</groupId>
+    <version>${revision}</version>
+    <relativePath>../spring-beet-parent</relativePath>
+  </parent>
+  <artifactId>spring-beet-jdbc</artifactId>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springbees.beet</groupId>
+      <artifactId>spring-beet-common</artifactId>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-data-jdbc</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>mybatis-spring-boot-starter</artifactId>
+      <groupId>org.mybatis.spring.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>flyway-core</artifactId>
+      <groupId>org.flywaydb</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>pagehelper-spring-boot-starter</artifactId>
+      <groupId>com.github.pagehelper</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>aspectjrt</artifactId>
+      <groupId>org.aspectj</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>aspectjweaver</artifactId>
+      <groupId>org.aspectj</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>mysql-connector-java</artifactId>
+      <groupId>mysql</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>postgresql</artifactId>
+      <groupId>org.postgresql</groupId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <artifactId>h2</artifactId>
+      <groupId>com.h2database</groupId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <artifactId>sqlite-jdbc</artifactId>
+      <groupId>org.xerial</groupId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>

@@ -10,3 +10,4 @@ target/
 
 # spring beet
 logs/
+**/memory:masterdb?cache=shared
