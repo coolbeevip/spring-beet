@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.springbees.beet</groupId>
     <artifactId>spring-beet-dependencies</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <relativePath>../../spring-beet-dependencies</relativePath>
   </parent>
   <artifactId>spring-beet-starter-parent</artifactId>
