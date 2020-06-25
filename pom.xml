@@ -258,17 +258,17 @@
         <version>2.5.3</version>
         <configuration>
           <autoVersionSubmodules>true</autoVersionSubmodules>
-<!--          <useReleaseProfile>false</useReleaseProfile>-->
-<!--          <releaseProfiles>release</releaseProfiles>-->
+          <useReleaseProfile>true</useReleaseProfile>
+          <releaseProfiles>release-sign-artifacts</releaseProfiles>
           <tagNameFormat>@{project.version}</tagNameFormat>
         </configuration>
-<!--        <dependencies>-->
-<!--          <dependency>-->
-<!--            <groupId>org.apache.maven.scm</groupId>-->
-<!--            <artifactId>maven-scm-provider-gitexe</artifactId>-->
-<!--            <version>1.9.5</version>-->
-<!--          </dependency>-->
-<!--        </dependencies>-->
+        <dependencies>
+          <dependency>
+            <groupId>org.apache.maven.scm</groupId>
+            <artifactId>maven-scm-provider-gitexe</artifactId>
+            <version>1.9.5</version>
+          </dependency>
+        </dependencies>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
