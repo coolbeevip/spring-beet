@@ -20,15 +20,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>spring-beet-parent</artifactId>
-    <groupId>org.springbees.beet</groupId>
-    <version>1.0.1-SNAPSHOT</version>
+    <groupId>com.github.spring-bees</groupId>
+    <version>1.0.0-SNAPSHOT</version>
     <relativePath>../spring-beet-parent</relativePath>
   </parent>
   <artifactId>spring-beet-web</artifactId>
 
   <dependencies>
     <dependency>
-      <groupId>org.springbees.beet</groupId>
+      <groupId>com.github.spring-bees</groupId>
       <artifactId>spring-beet-common</artifactId>
     </dependency>
     <dependency>
