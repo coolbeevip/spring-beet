@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package org.spring.beet.web.undertow;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -27,14 +28,14 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootTest(
     webEnvironment = WebEnvironment.RANDOM_PORT,
-    properties = {"server.ssl.enabled=true","server.secondary.port=4545"})
+    properties = {"server.ssl.enabled=true", "server.secondary.port=4545"})
 public class UndertowApplicationWithSslTest {
-
-  @LocalServerPort private int port;
 
   @Autowired
   @Qualifier("springBeetSslRestTemplate")
   RestTemplate sslRestTemplate;
+  @LocalServerPort
+  private int port;
 
   @Test
   public void restSslTest() {
@@ -43,7 +44,7 @@ public class UndertowApplicationWithSslTest {
   }
 
   @Test
-  public void secondaryPortTest(){
+  public void secondaryPortTest() {
     assertThat(sslRestTemplate.getForObject("http://localhost:" + 4545 + "/", String.class))
         .contains("Hello, World");
   }
