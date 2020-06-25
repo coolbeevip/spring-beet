@@ -1,14 +1,16 @@
 /**
  * Copyright © 2020 Lei Zhang (zhanglei@apache.org)
  *
- * <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
- * except in compliance with the License. You may obtain a copy of the License at
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
  *
- * <p>http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
- * <p>Unless required by applicable law or agreed to in writing, software distributed under the
- * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
- * express or implied. See the License for the specific language governing permissions and
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
  * limitations under the License.
  */
 package org.spring.beet.web.undertow;
@@ -25,7 +27,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootTest(
     webEnvironment = WebEnvironment.RANDOM_PORT,
-    properties = {"server.ssl.enabled=true"})
+    properties = {"server.ssl.enabled=true","server.secondary.port=4545"})
 public class UndertowApplicationWithSslTest {
 
   @LocalServerPort private int port;
@@ -37,6 +39,12 @@ public class UndertowApplicationWithSslTest {
   @Test
   public void restSslTest() {
     assertThat(sslRestTemplate.getForObject("https://localhost:" + port + "/", String.class))
+        .contains("Hello, World");
+  }
+
+  @Test
+  public void secondaryPortTest(){
+    assertThat(sslRestTemplate.getForObject("http://localhost:" + 4545 + "/", String.class))
         .contains("Hello, World");
   }
 }
