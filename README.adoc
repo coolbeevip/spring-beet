@@ -48,10 +48,10 @@
 发布 Staging 版本
 
 ----
-./mvnw clean license:check
-./mvnw release:clean
-./mvnw release:prepare
-./mvnw release:perform
+./mvnw clean
+./mvnw release:clean -DskipTests
+./mvnw release:prepare -DskipTests
+./mvnw release:perform -DskipTests -Dgpg.passphrase=[your_gpg_passphrase]
 git push --tags
 git push origin master
 ----
