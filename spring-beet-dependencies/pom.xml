@@ -16,14 +16,12 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.springbees.beet</groupId>
     <artifactId>spring-beet-build</artifactId>
-    <version>${revision}</version>
+    <version>1.0.0-2.3.0</version>
   </parent>
   <artifactId>spring-beet-dependencies</artifactId>
   <packaging>pom</packaging>
@@ -69,32 +67,32 @@
       <dependency>
         <groupId>org.springbees.beet</groupId>
         <artifactId>spring-beet-common</artifactId>
-        <version>${revision}</version>
+        <version>1.0.0-2.3.0</version>
       </dependency>
       <dependency>
         <groupId>org.springbees.beet</groupId>
         <artifactId>spring-beet-logging</artifactId>
-        <version>${revision}</version>
+        <version>1.0.0-2.3.0</version>
       </dependency>
       <dependency>
         <groupId>org.springbees.beet</groupId>
         <artifactId>spring-beet-logging-kafka</artifactId>
-        <version>${revision}</version>
+        <version>1.0.0-2.3.0</version>
       </dependency>
       <dependency>
         <groupId>org.springbees.beet</groupId>
         <artifactId>spring-beet-web</artifactId>
-        <version>${revision}</version>
+        <version>1.0.0-2.3.0</version>
       </dependency>
       <dependency>
         <groupId>org.springbees.beet</groupId>
         <artifactId>spring-beet-test</artifactId>
-        <version>${revision}</version>
+        <version>1.0.0-2.3.0</version>
       </dependency>
       <dependency>
         <groupId>org.springbees.beet</groupId>
         <artifactId>spring-beet-build-tools</artifactId>
-        <version>${revision}</version>
+        <version>1.0.0-2.3.0-SNAPSHOT</version>
       </dependency>
       <!-- logging -->
       <dependency>
