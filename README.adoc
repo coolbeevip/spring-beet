@@ -49,7 +49,7 @@
 
 ----
 ./mvnw clean
-./mvnw release:clean -DskipTests
+./mvnw release:clean
 ./mvnw release:prepare -DskipTests
 ./mvnw release:perform -DskipTests -Dgpg.passphrase=[your_gpg_passphrase]
 git push --tags
