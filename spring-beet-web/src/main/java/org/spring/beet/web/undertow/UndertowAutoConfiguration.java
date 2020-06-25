@@ -17,6 +17,7 @@ package org.spring.beet.web.undertow;
 
 import javax.net.ssl.SSLContext;
 import org.apache.http.client.HttpClient;
+import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.ssl.SSLContextBuilder;
@@ -47,9 +48,9 @@ public class UndertowAutoConfiguration {
         new SSLContextBuilder()
             .loadTrustMaterial(trustStore.getURL(), trustStorePassword.toCharArray())
             .build();
-    SSLConnectionSocketFactory socketFactory =
-        new SSLConnectionSocketFactory(
-            sslContext, SSLConnectionSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
+    SSLConnectionSocketFactory socketFactory = new SSLConnectionSocketFactory(
+        sslContext, new String[]{"TLSv1"}, null,
+        new NoopHostnameVerifier());
     HttpClient httpClient = HttpClients.custom().setSSLSocketFactory(socketFactory).build();
     HttpComponentsClientHttpRequestFactory factory =
         new HttpComponentsClientHttpRequestFactory(httpClient);
