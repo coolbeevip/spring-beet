@@ -27,6 +27,7 @@
     <artifactId>oss-parent</artifactId>
     <version>9</version>
   </parent>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
@@ -37,6 +38,7 @@
   </properties>
 
   <inceptionYear>2020</inceptionYear>
+
   <organization>
     <name>Lei Zhang &lt;zhanglei@apache.org&gt;</name>
   </organization>
@@ -45,6 +47,7 @@
     <developer>
       <name>Lei Zhang</name>
       <email>zhanglei AT apache.org</email>
+      <url>https://github.com/coolbeevip</url>
     </developer>
   </developers>
 
@@ -56,12 +59,17 @@
     </license>
   </licenses>
 
+  <issueManagement>
+    <url>https://github.com/spring-bees/spring-beet/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+
   <scm>
     <connection>scm:git:https://github.com/spring-bees/spring-beet.git</connection>
     <developerConnection>scm:git:https://github.com/spring-bees/spring-beet.git
     </developerConnection>
     <url>https://github.com/spring-bees/spring-beet</url>
-    <tag>${project.version}</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <modules>
