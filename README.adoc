@@ -41,7 +41,6 @@
 发布 SNAPSHOT 版本
 
 ----
-./mvnw clean package license:check
 ./mvnw clean deploy
 ----
 
@@ -50,8 +49,6 @@
 ----
 ./mvnw clean
 ./mvnw release:clean
-./mvnw release:prepare -DskipTests
-./mvnw release:perform -DskipTests -Dgpg.passphrase=[your_gpg_passphrase]
-git push --tags
-git push origin master
+./mvnw release:prepare
+./mvnw release:perform
 ----
