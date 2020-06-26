@@ -22,11 +22,20 @@
   <version>1.0.0-SNAPSHOT</version>
   <artifactId>spring-beet-build</artifactId>
   <packaging>pom</packaging>
+
   <parent>
     <groupId>org.sonatype.oss</groupId>
     <artifactId>oss-parent</artifactId>
     <version>9</version>
   </parent>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,7 +46,18 @@
     <license-maven-plugin.version>1.19</license-maven-plugin.version>
   </properties>
 
-  <inceptionYear>2020</inceptionYear>
+  <issueManagement>
+    <url>https://github.com/spring-bees/spring-beet/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+
+  <scm>
+    <connection>scm:git:git@github.com:spring-bees/spring-beet.git</connection>
+    <developerConnection>scm:git:git@github.com:spring-bees/spring-beet.git
+    </developerConnection>
+    <url>https://github.com/spring-bees/spring-beet</url>
+    <tag>HEAD</tag>
+  </scm>
 
   <organization>
     <name>Lei Zhang &lt;zhanglei@apache.org&gt;</name>
@@ -51,26 +71,7 @@
     </developer>
   </developers>
 
-  <licenses>
-    <license>
-      <name>Apache License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-
-  <issueManagement>
-    <url>https://github.com/spring-bees/spring-beet/issues</url>
-    <system>GitHub Issues</system>
-  </issueManagement>
-
-  <scm>
-    <connection>scm:git:https://github.com/spring-bees/spring-beet.git</connection>
-    <developerConnection>scm:git:https://github.com/spring-bees/spring-beet.git
-    </developerConnection>
-    <url>https://github.com/spring-bees/spring-beet</url>
-    <tag>HEAD</tag>
-  </scm>
+  <inceptionYear>2020</inceptionYear>
 
   <modules>
     <module>spring-beet-dependencies</module>
@@ -232,82 +233,58 @@
       <plugin>
         <groupId>org.eluder.coveralls</groupId>
         <artifactId>coveralls-maven-plugin</artifactId>
+        <version>4.3.0</version>
       </plugin>
       <plugin>
         <groupId>com.mycila</groupId>
         <artifactId>license-maven-plugin</artifactId>
       </plugin>
       <!--==================================================-->
-      <!-- Maven Sonatype                                   -->
+      <!-- Release                                          -->
       <!--==================================================-->
-      <plugin>
-        <artifactId>maven-deploy-plugin</artifactId>
-        <version>2.8.2</version>
-        <executions>
-          <execution>
-            <phase>deploy</phase>
-            <goals>
-              <goal>deploy</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
         <version>2.5.3</version>
         <configuration>
           <autoVersionSubmodules>true</autoVersionSubmodules>
-          <useReleaseProfile>true</useReleaseProfile>
-          <releaseProfiles>release-sign-artifacts</releaseProfiles>
+          <mavenExecutorId>forked-path</mavenExecutorId>
+          <useReleaseProfile>false</useReleaseProfile>
+          <arguments>${arguments} -Psonatype-oss-release</arguments>
           <tagNameFormat>@{project.version}</tagNameFormat>
         </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>org.apache.maven.scm</groupId>
-            <artifactId>maven-scm-provider-gitexe</artifactId>
-            <version>1.9.5</version>
-          </dependency>
-        </dependencies>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
-        <version>3.0.1</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.0.1</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
   <profiles>
-    <!-- GPG Signature on release -->
     <profile>
-      <id>release-sign-artifacts</id>
-      <activation>
-        <property>
-          <name>performRelease</name>
-          <value>true</value>
-        </property>
-      </activation>
+      <id>sonatype-oss-release</id>
       <build>
         <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>3.0.1</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>3.0.1</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
