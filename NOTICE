@@ -1,4 +1,4 @@
-Copyright © ${project.inceptionYear} ${owner} (${email})
+Copyright © 2020 Lei Zhang (zhanglei@apache.org)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -11,3 +11,498 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+===========================================================================
+Includes content from org.slf4j
+http://www.slf4j.org
+* log4j-over-slf4j, Version 1.7.25 (http://www.slf4j.org) under Apache Software Licenses (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from com.google.guava
+<<empty>>
+* guava, Version 29.0-jre (<<empty>>) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.junit.jupiter
+https://junit.org/junit5/
+* junit-jupiter-migrationsupport, Version 5.6.2 (https://junit.org/junit5/) under Eclipse Public License v2.0 (https://www.eclipse.org/legal/epl-v20.html)
+
+===========================================================================
+Includes content from org.projectlombok
+https://projectlombok.org
+* lombok, Version 1.18.12 (https://projectlombok.org) under The MIT License (https://projectlombok.org/LICENSE)
+
+===========================================================================
+Includes content from org.awaitility
+http://awaitility.org
+* awaitility, Version 3.0.0 (http://awaitility.org) under Apache 2.0 ()
+
+===========================================================================
+Includes content from org.mockito
+https://github.com/mockito/mockito
+* mockito-core, Version 2.23.4 (https://github.com/mockito/mockito) under The MIT License (https://github.com/mockito/mockito/blob/master/LICENSE)
+
+===========================================================================
+Includes content from Carrot Search s.c.
+http://www.carrotsearch.com
+* junit-benchmarks, Version 0.7.2 (http://labs.carrotsearch.com/junit-benchmarks.html) under The Apache Software License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter-test, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from com.github.spotbugs
+https://spotbugs.github.io/
+* spotbugs-annotations, Version 4.0.3 (https://spotbugs.github.io/) under GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1 (https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
+
+===========================================================================
+Includes content from org.junit.jupiter
+https://junit.org/junit5/
+* junit-jupiter-migrationsupport, Version 5.6.2 (https://junit.org/junit5/) under Eclipse Public License v2.0 (https://www.eclipse.org/legal/epl-v20.html)
+
+===========================================================================
+Includes content from org.slf4j
+http://www.slf4j.org
+* log4j-over-slf4j, Version 1.7.25 (http://www.slf4j.org) under Apache Software Licenses (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.mockito
+https://github.com/mockito/mockito
+* mockito-core, Version 2.23.4 (https://github.com/mockito/mockito) under The MIT License (https://github.com/mockito/mockito/blob/master/LICENSE)
+
+===========================================================================
+Includes content from com.github.spotbugs
+https://spotbugs.github.io/
+* spotbugs-annotations, Version 4.0.3 (https://spotbugs.github.io/) under GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1 (https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
+
+===========================================================================
+Includes content from Spring IO
+https://spring.io/projects/spring-kafka
+* spring-kafka, Version 2.5.0.RELEASE (https://github.com/spring-projects/spring-kafka) under Apache License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.projectlombok
+https://projectlombok.org
+* lombok, Version 1.18.12 (https://projectlombok.org) under The MIT License (https://projectlombok.org/LICENSE)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from org.awaitility
+http://awaitility.org
+* awaitility, Version 3.0.0 (http://awaitility.org) under Apache 2.0 ()
+
+===========================================================================
+Includes content from org.apache.kafka
+https://kafka.apache.org
+* kafka_2.12, Version 2.5.0 (https://kafka.apache.org) under The Apache Software License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from com.google.guava
+<<empty>>
+* guava, Version 29.0-jre (<<empty>>) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.apache.zookeeper
+<<empty>>
+* zookeeper, Version 3.5.7 (<<empty>>) under Apache License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter-test, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from Carrot Search s.c.
+http://www.carrotsearch.com
+* junit-benchmarks, Version 0.7.2 (http://labs.carrotsearch.com/junit-benchmarks.html) under The Apache Software License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.junit.jupiter
+https://junit.org/junit5/
+* junit-jupiter-migrationsupport, Version 5.6.2 (https://junit.org/junit5/) under Eclipse Public License v2.0 (https://www.eclipse.org/legal/epl-v20.html)
+
+===========================================================================
+Includes content from org.mockito
+https://github.com/mockito/mockito
+* mockito-core, Version 2.23.4 (https://github.com/mockito/mockito) under The MIT License (https://github.com/mockito/mockito/blob/master/LICENSE)
+
+===========================================================================
+Includes content from Carrot Search s.c.
+http://www.carrotsearch.com
+* junit-benchmarks, Version 0.7.2 (http://labs.carrotsearch.com/junit-benchmarks.html) under The Apache Software License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.slf4j
+http://www.slf4j.org
+* log4j-over-slf4j, Version 1.7.25 (http://www.slf4j.org) under Apache Software Licenses (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter-test, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from com.github.spotbugs
+https://spotbugs.github.io/
+* spotbugs-annotations, Version 4.0.3 (https://spotbugs.github.io/) under GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1 (https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
+
+===========================================================================
+Includes content from com.google.guava
+<<empty>>
+* guava, Version 29.0-jre (<<empty>>) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.awaitility
+http://awaitility.org
+* awaitility, Version 3.0.0 (http://awaitility.org) under Apache 2.0 ()
+
+===========================================================================
+Includes content from org.projectlombok
+https://projectlombok.org
+* lombok, Version 1.18.12 (https://projectlombok.org) under The MIT License (https://projectlombok.org/LICENSE)
+
+===========================================================================
+Includes content from com.github.pagehelper
+<<empty>>
+* pagehelper-spring-boot-starter, Version 1.2.13 (<<empty>>) under The MIT License (MIT) (https://github.com/pagehelper/pagehelper-boot-starter/blob/master/LICENSE)
+
+===========================================================================
+Includes content from Oracle Corporation
+http://www.oracle.com
+* mysql-connector-java, Version 8.0.20 (http://dev.mysql.com/doc/connector-j/en/) under The GNU General Public License, v2 with FOSS exception ()
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-autoconfigure, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from org.aspectj
+http://www.aspectj.org
+* aspectjrt, Version 1.9.5 (http://www.aspectj.org) under Eclipse Public License - v 1.0 (http://www.eclipse.org/legal/epl-v10.html)
+
+===========================================================================
+Includes content from org.projectlombok
+https://projectlombok.org
+* lombok, Version 1.18.12 (https://projectlombok.org) under The MIT License (https://projectlombok.org/LICENSE)
+
+===========================================================================
+Includes content from com.github.spotbugs
+https://spotbugs.github.io/
+* spotbugs-annotations, Version 4.0.3 (https://spotbugs.github.io/) under GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1 (https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
+
+===========================================================================
+Includes content from org.aspectj
+http://www.aspectj.org
+* aspectjweaver, Version 1.9.5 (http://www.aspectj.org) under Eclipse Public License - v 1.0 (http://www.eclipse.org/legal/epl-v10.html)
+
+===========================================================================
+Includes content from org.slf4j
+http://www.slf4j.org
+* log4j-over-slf4j, Version 1.7.25 (http://www.slf4j.org) under Apache Software Licenses (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from org.flywaydb
+<<empty>>
+* flyway-core, Version 6.4.1 (<<empty>>) under Apache License, Version 2.0 (https://flywaydb.org/licenses/flyway-community)
+
+===========================================================================
+Includes content from org.xerial
+<<empty>>
+* sqlite-jdbc, Version 3.31.1 (<<empty>>) under The Apache Software License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.junit.jupiter
+https://junit.org/junit5/
+* junit-jupiter-migrationsupport, Version 5.6.2 (https://junit.org/junit5/) under Eclipse Public License v2.0 (https://www.eclipse.org/legal/epl-v20.html)
+
+===========================================================================
+Includes content from PostgreSQL Global Development Group
+https://jdbc.postgresql.org/
+* postgresql, Version 42.2.12 (https://github.com/pgjdbc/pgjdbc) under BSD-2-Clause (https://jdbc.postgresql.org/about/license.html)
+
+===========================================================================
+Includes content from Carrot Search s.c.
+http://www.carrotsearch.com
+* junit-benchmarks, Version 0.7.2 (http://labs.carrotsearch.com/junit-benchmarks.html) under The Apache Software License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter-data-jdbc, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter-test, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from org.mybatis.spring.boot
+<<empty>>
+* mybatis-spring-boot-starter, Version 2.1.2 (<<empty>>) under The Apache Software License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from com.google.guava
+<<empty>>
+* guava, Version 29.0-jre (<<empty>>) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.mockito
+https://github.com/mockito/mockito
+* mockito-core, Version 2.23.4 (https://github.com/mockito/mockito) under The MIT License (https://github.com/mockito/mockito/blob/master/LICENSE)
+
+===========================================================================
+Includes content from com.h2database
+https://h2database.com
+* h2, Version 1.4.200 (https://h2database.com) under MPL 2.0 or EPL 1.0 (https://h2database.com/html/license.html)
+
+===========================================================================
+Includes content from org.awaitility
+http://awaitility.org
+* awaitility, Version 3.0.0 (http://awaitility.org) under Apache 2.0 ()
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from org.junit.jupiter
+https://junit.org/junit5/
+* junit-jupiter-migrationsupport, Version 5.6.2 (https://junit.org/junit5/) under Eclipse Public License v2.0 (https://www.eclipse.org/legal/epl-v20.html)
+
+===========================================================================
+Includes content from org.slf4j
+http://www.slf4j.org
+* log4j-over-slf4j, Version 1.7.25 (http://www.slf4j.org) under Apache Software Licenses (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from Carrot Search s.c.
+http://www.carrotsearch.com
+* junit-benchmarks, Version 0.7.2 (http://labs.carrotsearch.com/junit-benchmarks.html) under The Apache Software License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.awaitility
+http://awaitility.org
+* awaitility, Version 3.0.0 (http://awaitility.org) under Apache 2.0 ()
+
+===========================================================================
+Includes content from org.mockito
+https://github.com/mockito/mockito
+* mockito-core, Version 2.23.4 (https://github.com/mockito/mockito) under The MIT License (https://github.com/mockito/mockito/blob/master/LICENSE)
+
+===========================================================================
+Includes content from com.google.guava
+<<empty>>
+* guava, Version 29.0-jre (<<empty>>) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.projectlombok
+https://projectlombok.org
+* lombok, Version 1.18.12 (https://projectlombok.org) under The MIT License (https://projectlombok.org/LICENSE)
+
+===========================================================================
+Includes content from com.github.spotbugs
+https://spotbugs.github.io/
+* spotbugs-annotations, Version 4.0.3 (https://spotbugs.github.io/) under GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1 (https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter-test, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from org.apache.kafka
+https://kafka.apache.org
+* kafka-clients, Version 2.5.0 (https://kafka.apache.org) under The Apache Software License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.awaitility
+http://awaitility.org
+* awaitility, Version 3.0.0 (http://awaitility.org) under Apache 2.0 ()
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter-test, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from org.junit.jupiter
+https://junit.org/junit5/
+* junit-jupiter-migrationsupport, Version 5.6.2 (https://junit.org/junit5/) under Eclipse Public License v2.0 (https://www.eclipse.org/legal/epl-v20.html)
+
+===========================================================================
+Includes content from org.slf4j
+http://www.slf4j.org
+* log4j-over-slf4j, Version 1.7.25 (http://www.slf4j.org) under Apache Software Licenses (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from com.google.guava
+<<empty>>
+* guava, Version 29.0-jre (<<empty>>) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.mockito
+https://github.com/mockito/mockito
+* mockito-core, Version 2.23.4 (https://github.com/mockito/mockito) under The MIT License (https://github.com/mockito/mockito/blob/master/LICENSE)
+
+===========================================================================
+Includes content from com.github.spotbugs
+https://spotbugs.github.io/
+* spotbugs-annotations, Version 4.0.3 (https://spotbugs.github.io/) under GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1 (https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from org.projectlombok
+https://projectlombok.org
+* lombok, Version 1.18.12 (https://projectlombok.org) under The MIT License (https://projectlombok.org/LICENSE)
+
+===========================================================================
+Includes content from Carrot Search s.c.
+http://www.carrotsearch.com
+* junit-benchmarks, Version 0.7.2 (http://labs.carrotsearch.com/junit-benchmarks.html) under The Apache Software License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.apache.httpcomponents
+http://hc.apache.org/httpcomponents-client
+* httpclient, Version 4.5.12 (http://hc.apache.org/httpcomponents-client) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.mockito
+https://github.com/mockito/mockito
+* mockito-core, Version 2.23.4 (https://github.com/mockito/mockito) under The MIT License (https://github.com/mockito/mockito/blob/master/LICENSE)
+
+===========================================================================
+Includes content from Carrot Search s.c.
+http://www.carrotsearch.com
+* junit-benchmarks, Version 0.7.2 (http://labs.carrotsearch.com/junit-benchmarks.html) under The Apache Software License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.slf4j
+http://www.slf4j.org
+* log4j-over-slf4j, Version 1.7.25 (http://www.slf4j.org) under Apache Software Licenses (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter-test, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from com.google.guava
+<<empty>>
+* guava, Version 29.0-jre (<<empty>>) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.projectlombok
+https://projectlombok.org
+* lombok, Version 1.18.12 (https://projectlombok.org) under The MIT License (https://projectlombok.org/LICENSE)
+
+===========================================================================
+Includes content from org.apache.httpcomponents
+http://hc.apache.org/httpcomponents-core-ga
+* httpcore, Version 4.4.13 (http://hc.apache.org/httpcomponents-core-ga) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter-web, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter-undertow, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from org.junit.jupiter
+https://junit.org/junit5/
+* junit-jupiter-migrationsupport, Version 5.6.2 (https://junit.org/junit5/) under Eclipse Public License v2.0 (https://www.eclipse.org/legal/epl-v20.html)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from org.awaitility
+http://awaitility.org
+* awaitility, Version 3.0.0 (http://awaitility.org) under Apache 2.0 ()
+
+===========================================================================
+Includes content from com.github.spotbugs
+https://spotbugs.github.io/
+* spotbugs-annotations, Version 4.0.3 (https://spotbugs.github.io/) under GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1 (https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
+
+===========================================================================
+Includes content from Carrot Search s.c.
+http://www.carrotsearch.com
+* junit-benchmarks, Version 0.7.2 (http://labs.carrotsearch.com/junit-benchmarks.html) under The Apache Software License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.mockito
+https://github.com/mockito/mockito
+* mockito-core, Version 2.23.4 (https://github.com/mockito/mockito) under The MIT License (https://github.com/mockito/mockito/blob/master/LICENSE)
+
+===========================================================================
+Includes content from com.google.guava
+<<empty>>
+* guava, Version 29.0-jre (<<empty>>) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from org.projectlombok
+https://projectlombok.org
+* lombok, Version 1.18.12 (https://projectlombok.org) under The MIT License (https://projectlombok.org/LICENSE)
+
+===========================================================================
+Includes content from Pivotal Software, Inc.
+https://spring.io
+* spring-boot-starter-test, Version 2.3.0.RELEASE (https://spring.io/projects/spring-boot) under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+===========================================================================
+Includes content from org.slf4j
+http://www.slf4j.org
+* log4j-over-slf4j, Version 1.7.25 (http://www.slf4j.org) under Apache Software Licenses (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+===========================================================================
+Includes content from org.junit.jupiter
+https://junit.org/junit5/
+* junit-jupiter-migrationsupport, Version 5.6.2 (https://junit.org/junit5/) under Eclipse Public License v2.0 (https://www.eclipse.org/legal/epl-v20.html)
+
+===========================================================================
+Includes content from com.github.spotbugs
+https://spotbugs.github.io/
+* spotbugs-annotations, Version 4.0.3 (https://spotbugs.github.io/) under GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1 (https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
+
+===========================================================================
+Includes content from org.awaitility
+http://awaitility.org
+* awaitility, Version 3.0.0 (http://awaitility.org) under Apache 2.0 ()
