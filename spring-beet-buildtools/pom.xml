@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright © 2020 Lei Zhang (zhanglei@apache.org)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.spring-bees</groupId>
+  <artifactId>spring-beet-buildtools</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
+
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>9</version>
+  </parent>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <issueManagement>
+    <url>https://github.com/spring-bees/spring-beet/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+
+  <scm>
+    <connection>scm:git:git@github.com:spring-bees/spring-beet.git</connection>
+    <developerConnection>scm:git:git@github.com:spring-bees/spring-beet.git
+    </developerConnection>
+    <url>https://github.com/spring-bees/spring-beet</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <organization>
+    <name>Lei Zhang &lt;zhanglei@apache.org&gt;</name>
+  </organization>
+
+  <developers>
+    <developer>
+      <name>Lei Zhang</name>
+      <email>zhanglei AT apache.org</email>
+      <url>https://github.com/coolbeevip</url>
+    </developer>
+  </developers>
+
+  <inceptionYear>2020</inceptionYear>
+
+  <properties>
+    <license-maven-plugin.version>3.0</license-maven-plugin.version>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.mycila</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <version>${license-maven-plugin.version}</version>
+        <configuration>
+          <header>spring-beet-buildtools/license/license_header.tpl</header>
+          <includes>
+            <include>**/*.java</include>
+            <include>**/*.xml</include>
+            <include>**/*.yaml</include>
+            <include>**/*.yml</include>
+            <include>**/*.properties</include>
+            <include>**/*.factories</include>
+          </includes>
+          <excludes>
+            <exclude>**/.mvn/**</exclude>
+            <exclude>**/*.md</exclude>
+            <exclude>**/*.adoc</exclude>
+            <exclude>**/checkstyle/**</exclude>
+            <exclude>**/google-style/**</exclude>
+            <exclude>**/spotbugs/**</exclude>
+          </excludes>
+          <properties>
+            <owner>Lei Zhang</owner>
+            <email>zhanglei@apache.org</email>
+          </properties>
+          <mapping>
+            <factories>SCRIPT_STYLE</factories>
+          </mapping>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

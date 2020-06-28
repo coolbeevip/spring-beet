@@ -45,7 +45,6 @@
     <puppycrawl.checkstyle.version>8.29</puppycrawl.checkstyle.version>
     <maven-checkstyle-plugin.version>3.1.1</maven-checkstyle-plugin.version>
     <spotbugs-maven-plugin.version>4.0.4</spotbugs-maven-plugin.version>
-    <license-maven-plugin.version>1.19</license-maven-plugin.version>
     <coveralls-maven-plugin.version>4.3.0</coveralls-maven-plugin.version>
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
     <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
@@ -84,6 +83,7 @@
   <inceptionYear>2020</inceptionYear>
 
   <modules>
+    <module>spring-beet-buildtools</module>
     <module>spring-beet-dependencies</module>
     <module>spring-beet-parent</module>
     <module>spring-beet-test</module>
@@ -97,6 +97,37 @@
   </modules>
 
   <build>
+    <plugins>
+      <plugin>
+        <groupId>com.mycila</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <version>${license-maven-plugin.version}</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+      </plugin>
+      <plugin>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.eluder.coveralls</groupId>
+        <artifactId>coveralls-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+      </plugin>
+    </plugins>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -118,8 +149,15 @@
           <groupId>com.mycila</groupId>
           <artifactId>license-maven-plugin</artifactId>
           <version>${license-maven-plugin.version}</version>
+          <dependencies>
+            <dependency>
+              <groupId>com.github.spring-bees</groupId>
+              <artifactId>spring-beet-buildtools</artifactId>
+              <version>${project.version}</version>
+            </dependency>
+          </dependencies>
           <configuration>
-            <header>src/license/license_header.tpl</header>
+            <header>spring-beet-buildtools/license/license_header.tpl</header>
             <includes>
               <include>**/*.java</include>
               <include>**/*.xml</include>
@@ -162,16 +200,21 @@
               <groupId>com.puppycrawl.tools</groupId>
               <version>${puppycrawl.checkstyle.version}</version>
             </dependency>
+            <dependency>
+              <groupId>com.github.spring-bees</groupId>
+              <artifactId>spring-beet-buildtools</artifactId>
+              <version>${project.version}</version>
+            </dependency>
           </dependencies>
           <configuration>
-            <configLocation>src/checkstyle/checkstyle-google.xml</configLocation>
+            <configLocation>spring-beet-buildtools/checkstyle/checkstyle-google.xml</configLocation>
             <consoleOutput>true</consoleOutput>
             <encoding>UTF-8</encoding>
             <violationSeverity>warning</violationSeverity>
             <failOnViolation>true</failOnViolation>
             <includeResources>false</includeResources>
             <includeTestSourceDirectory>true</includeTestSourceDirectory>
-            <suppressionsLocation>src/checkstyle/checkstyle-suppressions.xml</suppressionsLocation>
+            <suppressionsLocation>spring-beet-buildtools/checkstyle/checkstyle-suppressions.xml</suppressionsLocation>
           </configuration>
           <executions>
             <execution>
@@ -188,8 +231,15 @@
           <artifactId>spotbugs-maven-plugin</artifactId>
           <version>${spotbugs-maven-plugin.version}</version>
           <configuration>
-            <excludeFilterFile>src/spotbugs/spotbugs-exclude.xml</excludeFilterFile>
+            <excludeFilterFile>spring-beet-buildtools/spotbugs/spotbugs-exclude.xml</excludeFilterFile>
           </configuration>
+          <dependencies>
+            <dependency>
+              <groupId>com.github.spring-bees</groupId>
+              <artifactId>spring-beet-buildtools</artifactId>
+              <version>${project.version}</version>
+            </dependency>
+          </dependencies>
           <executions>
             <execution>
               <goals>
@@ -262,36 +312,6 @@
         </plugin>
       </plugins>
     </pluginManagement>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <groupId>org.apache.maven.plugins</groupId>
-      </plugin>
-      <plugin>
-        <groupId>com.github.spotbugs</groupId>
-        <artifactId>spotbugs-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.eluder.coveralls</groupId>
-        <artifactId>coveralls-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>com.mycila</groupId>
-        <artifactId>license-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-release-plugin</artifactId>
-      </plugin>
-    </plugins>
   </build>
   <profiles>
     <profile>
