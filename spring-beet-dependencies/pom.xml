@@ -45,6 +45,7 @@
     <hazelcast.version>4.0.1</hazelcast.version>
     <awaitility.version>3.0.0</awaitility.version>
     <akka.version>2.6.5</akka.version>
+    <mariadb.version>2.6.1</mariadb.version>
     <!-- plugin dependencies -->
     <slf4j.version>1.7.25</slf4j.version>
     <spotbugs.version>4.0.3</spotbugs.version>
@@ -110,6 +111,11 @@
         <artifactId>pagehelper-spring-boot-starter</artifactId>
         <groupId>com.github.pagehelper</groupId>
         <version>${pagehelper.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mariadb.jdbc</groupId>
+        <artifactId>mariadb-java-client</artifactId>
+        <version>${mariadb.version}</version>
       </dependency>
       <!-- google -->
       <dependency>

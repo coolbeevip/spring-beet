@@ -60,8 +60,8 @@
       <groupId>org.aspectj</groupId>
     </dependency>
     <dependency>
-      <artifactId>mysql-connector-java</artifactId>
-      <groupId>mysql</groupId>
+      <groupId>org.mariadb.jdbc</groupId>
+      <artifactId>mariadb-java-client</artifactId>
     </dependency>
     <dependency>
       <artifactId>postgresql</artifactId>
