@@ -16,12 +16,10 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.spring-bees</groupId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <artifactId>spring-beet-build</artifactId>
   <packaging>pom</packaging>
 
@@ -40,7 +38,7 @@
   </licenses>
 
   <properties>
-    <spring-beet-buildtools.version>1.0.1-SNAPSHOT</spring-beet-buildtools.version>
+    <spring-beet-buildtools.version>1.0.1</spring-beet-buildtools.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <puppycrawl.checkstyle.version>8.29</puppycrawl.checkstyle.version>
@@ -66,7 +64,7 @@
     <developerConnection>scm:git:git@github.com:spring-bees/spring-beet.git
     </developerConnection>
     <url>https://github.com/spring-bees/spring-beet</url>
-    <tag>HEAD</tag>
+    <tag>1.0.1</tag>
   </scm>
 
   <organization>
