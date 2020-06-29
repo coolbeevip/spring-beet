@@ -40,6 +40,7 @@
   </licenses>
 
   <properties>
+    <spring-beet-buildtools.version>1.0.1-SNAPSHOT</spring-beet-buildtools.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <puppycrawl.checkstyle.version>8.29</puppycrawl.checkstyle.version>
@@ -92,8 +93,10 @@
     <module>spring-beet-logging</module>
     <module>spring-beet-logging-kafka</module>
     <module>spring-beet-web</module>
+    <module>spring-beet-cloud-eureka</module>
     <module>spring-beet-starters</module>
     <module>spring-beet-example</module>
+
   </modules>
 
   <build>
@@ -153,7 +156,7 @@
             <dependency>
               <groupId>com.github.spring-bees</groupId>
               <artifactId>spring-beet-buildtools</artifactId>
-              <version>${project.version}</version>
+              <version>${spring-beet-buildtools.version}</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -203,7 +206,7 @@
             <dependency>
               <groupId>com.github.spring-bees</groupId>
               <artifactId>spring-beet-buildtools</artifactId>
-              <version>${project.version}</version>
+              <version>${spring-beet-buildtools.version}</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -237,7 +240,7 @@
             <dependency>
               <groupId>com.github.spring-bees</groupId>
               <artifactId>spring-beet-buildtools</artifactId>
-              <version>${project.version}</version>
+              <version>${spring-beet-buildtools.version}</version>
             </dependency>
           </dependencies>
           <executions>

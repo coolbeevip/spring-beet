@@ -27,5 +27,8 @@
   <packaging>pom</packaging>
   <modules>
     <module>spring-beet-demo</module>
+    <module>spring-beet-demo-booking</module>
+    <module>spring-beet-demo-car</module>
+    <module>spring-beet-demo-hotel</module>
   </modules>
 </project>

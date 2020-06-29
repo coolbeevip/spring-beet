@@ -1,0 +1,30 @@
+== 注册服务客户端
+
+Eureka + OpenFeign + Ribbon 支持注册服务命名空间
+
+
+.application.yml
+[source, yaml]
+----
+spring:
+  application:
+    name: spring-beet-demo-car
+
+  cloud:
+    discovery:
+      # 开启连接注册服务
+      enabled: true
+
+  eureka:
+    client:
+      serviceUrl:
+        # 注册服务地址
+        defaultZone: http://localhost:50000/eureka
+----
+
+其它参数
+[source, properties]
+----
+# 命名空间
+eureka.instance.metadataMap.namespace=DEFAULT
+----

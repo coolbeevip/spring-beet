@@ -30,4 +30,12 @@ public class ApplicationContextWrapper {
   public static Optional<ApplicationContext> getContext() {
     return context;
   }
+
+  public static Optional<String> getProperty(String key) {
+    if (context.isPresent()) {
+      return Optional.of(context.get().getEnvironment().getProperty(key));
+    } else {
+      return Optional.empty();
+    }
+  }
 }
