@@ -20,7 +20,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.spring-bees</groupId>
   <artifactId>spring-beet-buildtools</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2-SNAPSHOT</version>
 
   <parent>
     <groupId>org.sonatype.oss</groupId>
@@ -46,7 +46,7 @@
     <developerConnection>scm:git:git@github.com:spring-bees/spring-beet.git
     </developerConnection>
     <url>https://github.com/spring-bees/spring-beet</url>
-    <tag>1.0.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <organization>
