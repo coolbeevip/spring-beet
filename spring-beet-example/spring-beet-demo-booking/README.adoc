@@ -1,0 +1,17 @@
+== 注册服务演示程序
+
+本演示程序演示了三个服务向注册中心注册，并通过注册中心实现服务调用
+
+* booking 订单服务
+* car 订车服务
+* hotel 定房服务
+
+调用方式
+
+`booking->car`
+`booking->hotel`
+
+
+----
+curl http://localhost:40000/booking/<订车数量>/<订房数量>
+----
